@@ -1,33 +1,36 @@
 <html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div id="container">
-            <div class="team-container" id="home-container">
-                <h1>HOME</h1>
-                <p id="home-score">0</p>
-                <div>
-                    <button onclick="plus1Home()">+1</button>
-                    <button onclick="plus2Home()">+2</button>
-                    <button onclick="plus3Home()">+3</button>
-                </div>     
-            </div>
-            
-            <div class="team-container" id="guest-container">
-                <h1>GUEST</h1>
-                <p id="guest-score">0</p>
-                <div>
-                    <button onclick="plus1Guest()">+1</button>
-                    <button onclick="plus2Guest()">+2</button>
-                    <button onclick="plus3Guest()">+3</button>
-                </div>     
-            </div>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="team-container" id="home-container">
+        <h1>HOME</h1>
+        <p id="home-score">0</p>
+        <div>
+          <button onclick="plus1Home()">+1</button>
+          <button onclick="plus2Home()">+2</button>
+          <button onclick="plus3Home()">+3</button>
         </div>
-        <button id="new-game-btn" onclick="resetGame()">New Game</button>
-        <script src="index.js"></script>
-    </body>
+      </div>
+
+      <div class="team-container" id="guest-container">
+        <h1>AWAY</h1>
+        <p id="guest-score">0</p>
+        <div>
+          <button onclick="plus1Guest()">+1</button>
+          <button onclick="plus2Guest()">+2</button>
+          <button onclick="plus3Guest()">+3</button>
+        </div>
+      </div>
+    </div>
+    <button id="new-game-btn" onclick="resetGame()">New Game</button>
+    <script src="index.js"></script>
+  </body>
 </html>
